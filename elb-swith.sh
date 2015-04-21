@@ -24,7 +24,5 @@ esac
 
 for ELB in ${LoadBalancerName[@]}
 do
-	echo $LoadBalancerName
-	echo $SubCommand
-	aws elb $SubCommand --load-balancer-name $ELB --instances $InstanceId
+      aws elb $SubCommand --load-balancer-name $ELB --instances $InstanceId
 done
